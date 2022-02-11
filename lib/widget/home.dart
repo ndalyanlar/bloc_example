@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../core/change_theme_cubit.dart';
-import 'counter_page_provider.dart';
+import 'page_provider.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class Home extends StatelessWidget {
         return MaterialApp(
           title: 'Bloc Demo',
           theme: themeData,
-          home: const CounterPageProvider(),
+          home: const ChangeBoxPageProvider(),
         );
       },
     );
